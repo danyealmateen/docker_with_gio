@@ -21,6 +21,11 @@ class ComposerStaticInit311c7a785a2af4ab4dae0f24542d289d
     );
 
     public static $classMap = array (
+        'App\\DB' => __DIR__ . '/../..' . '/src/app/DB.php',
+        'App\\Enums\\Status' => __DIR__ . '/../..' . '/src/app/Enums/Status.php',
+        'App\\PaymentGateway\\Paddle\\Transaction' => __DIR__ . '/../..' . '/src/app/PaymentGateway/Paddle/Transaction.php',
+        'App\\Toaster' => __DIR__ . '/../..' . '/src/app/Toaster.php',
+        'App\\ToasterPro' => __DIR__ . '/../..' . '/src/app/ToasterPro.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 

@@ -4,11 +4,18 @@ namespace App;
 
 class Toaster
 {
-    public array $slices = [];
-    public int $size = 2;
+    protected array $slices = [];
+    protected int $size = 2;
+
+    public function __construct()
+    {
+        $this->slices = [];
+        $this->size = 2;
+    }
 
     public function addSlice(string $slice): void
     {
+        var_dump($this);
         if (count($this->slices) < $this->size) {
             $this->slices[] = $slice;
         }
@@ -19,5 +26,10 @@ class Toaster
         foreach ($this->slices as $i => $slice) {
             echo ($i + 1) . ': Toasting ' . $slice . PHP_EOL;
         }
+    }
+
+    public function foo()
+    {
+        throw new \Exception('Not supported');
     }
 }
