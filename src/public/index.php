@@ -3,13 +3,7 @@
 require_once __DIR__ . '/../../vendor/autoload.php';
 
 
+$collector = new \App\CollectionAgency();
 
-// $fields = [
-//     new \App\Text('textField'),
-//     new \App\Checkbox('checkboxField'),
-//     new \App\Radio('radioField'),
-// ];
 
-// foreach ($fields as $field) {
-//     echo $field->render() . '<br>';
-// }
+echo $collector->collect(100) . PHP_EOL;
