@@ -1,10 +1,15 @@
 <?php
 
-use App\Toaster;
-
 require_once __DIR__ . '/../../vendor/autoload.php';
 
-$toaster = new Toaster();
 
-$toaster->addSlice('bread');
-$toaster->toast();
+
+// $fields = [
+//     new \App\Text('textField'),
+//     new \App\Checkbox('checkboxField'),
+//     new \App\Radio('radioField'),
+// ];
+
+// foreach ($fields as $field) {
+//     echo $field->render() . '<br>';
+// }
