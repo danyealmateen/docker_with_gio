@@ -6,10 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'App\\DB' => $baseDir . '/src/app/DB.php',
-    'App\\Enums\\Status' => $baseDir . '/src/app/Enums/Status.php',
-    'App\\PaymentGateway\\Paddle\\Transaction' => $baseDir . '/src/app/PaymentGateway/Paddle/Transaction.php',
-    'App\\Toaster' => $baseDir . '/src/app/Toaster.php',
-    'App\\ToasterPro' => $baseDir . '/src/app/ToasterPro.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
 );

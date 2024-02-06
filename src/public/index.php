@@ -2,8 +2,7 @@
 
 require_once __DIR__ . '/../../vendor/autoload.php';
 
+use App\FileProcessor;
 
-$collector = new \App\CollectionAgency();
-
-
-echo $collector->collect(100) . PHP_EOL;
+$fileProcessor = new FileProcessor();
+$fileProcessor->process("myfile.txt");
